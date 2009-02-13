@@ -30,6 +30,6 @@ setup(
     ],
     packages = find_packages(),
     keywords = 'xml xpath',
-    test_suite = '_unittests',
+    test_suite = 'yaxl._unittests',
     zip_safe = False
 )
