@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'yaxl',
-    version = '0.0.17',
+    version = '0.0.18',
     description = 'Yet Another (Pythonic) XML Library',
     long_description = """A library for reading, writing and manipulating XML in Python.
     
@@ -16,7 +16,7 @@ setup(
     """,
     author = 'Iain Lowe',
     author_email = 'yaxl@ilowe.net',
-    url = 'http://www.ilowe.net/software/yaxl',
+    url = 'http://www.googlecode.com/p/yaxl',
     license = 'MIT License',
     classifiers = [
         'Development Status :: 4 - Beta',
