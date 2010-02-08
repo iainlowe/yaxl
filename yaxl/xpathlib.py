@@ -89,7 +89,7 @@ class XPathMixin:
                         
         def findMatchingNodes(x):
             for y in [i for i in x.children if type(i) not in (str, unicode)]:
-                if y.qname == nodeTest:
+                if y.qname == nodeTest or nodeTest == '*':
                     dlist.append(y)
                 findMatchingNodes(y)
 

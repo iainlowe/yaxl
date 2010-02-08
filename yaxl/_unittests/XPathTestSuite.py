@@ -77,6 +77,15 @@ class XpathTests(unittest.TestCase):
 		
 		for node in (x, y, z):
 			self.assertEquals(node('/'), x)
+
+	def test_selectAllNodes(self):
+		x = Element('x')
+		y = x.append('y')
+		z = x.append('z')
+		a = z.append('a')
+		b = a.append('b')
+
+		self.assertEquals(set(x('//*')), set([y, z, a, b]))
 	
 	def test_selectSubElement(self):
 		x = Element('test')
